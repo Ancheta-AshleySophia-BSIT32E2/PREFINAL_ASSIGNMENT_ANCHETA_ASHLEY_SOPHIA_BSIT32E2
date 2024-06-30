@@ -1,36 +1,56 @@
 # PREFINAL_ASSIGNMENT_ANCHETA_ASHLEY_SOPHIA_BSIT32E2
 
-Self-Assessment: Understanding Onion Architecture, MVC, and Web API in .NET Core and Encountered Bottlenecks
+Self-Assessment: Onion Architecture, MVC, and Web API (.NET Core) with Bottlenecks (Encountered)
 Conceptual Understanding:
 
-Onion Architecture:
-
-Awareness: Yes, I have heard of the Onion Architecture principle in software design.
-MVC Pattern:
-
-Familiarity: Yes, I am familiar with the Model-View-Controller (MVC) pattern for building web applications.
-Web API:
-
-Knowledge: No, I do not understand the concept of building RESTful APIs using ASP.NET Core Web API.
+Onion Architecture: (Yes/No) 
+ Have you heard of the Onion Architecture principle in software design?
+ ANSWER: Yes
+MVC Pattern: (Yes/No) 
+ Are you familiar with the Model-View-Controller (MVC) pattern for building web applications?
+ ANSWER: Yes
+Web API: (Yes/No) 
+ Do you understand the concept of building RESTful APIs using ASP.NET Core Web API?
+ ANSWER: No
+ 
 Application & Bottlenecks:
-
 Onion Architecture:
 
-Benefits:
-Organizes code into distinct layers, enhancing clarity and maintainability.
-Facilitates easier modifications without widespread impact.
-Improves testability.
-Challenges Encountered: Yes, I have encountered difficulties with understanding and implementing Onion Architecture, often leading to errors and confusion due to its complexity.
-MVC Pattern:
+Benefits: (1-3 keywords)
+Briefly list some key benefits of using Onion Architecture in .NET Core projects. (e.g., separation of concerns, testability)
+ANSWER:
+The codebase is divided into distinct layers, clearly defining the role of each part of the application. This organization aids in making changes by allowing you to locate and update the appropriate section of code without disrupting the rest.
 
-Components:
-Model: Manages data and business logic, handling data processing and rules.
-View: Displays data to the user, representing the user interface.
-Controller: Bridges the Model and View, handling user input and updating the Model.
-Challenges Encountered: Yes, I have found the tight coupling between Model and Controller to be sometimes complicated, although I grasp the basic concepts.
+Bottlenecks (Encountered): (Yes/No and Briefly Explain)
+Have you encountered any challenges with Onion Architecture in your projects? If so, briefly describe the bottleneck(s). (e.g., Increased complexity for simple projects, difficulty finding developers familiar with the pattern)
+ANSWER:
+Yes, I often find Onion Architecture difficult to grasp. I frequently run into errors and struggle to understand how this architectural style operates.
+
+MVC:
+Components: (1-3 keywords each)
+ 
+Briefly describe the roles of the Model, View, and Controller in the MVC pattern.
+ANSWER:
+Model - Manages data and business logic, processing data and applying rules.
+View - Presents data to the user, forming the user interface.
+Controller - Serves as an intermediary between Model and View, managing user input and updating the Model.
+
+Bottlenecks (Encountered): (Yes/No and Briefly Explain) 
+Have you encountered any challenges with tight coupling between Model and Controller in MVC projects? If so, briefly describe the issue(s). (e.g., Difficulty in unit testing controllers, logic changes rippling through the application)
+ANSWER: 
+Yes, it can be complicated at times, but I understand the basics.
+
 Web API:
+Differences from MVC: (Yes/No and Briefly Explain) 
+Can you differentiate between traditional MVC applications and Web APIs? Briefly explain the main difference.
+ANSWER: 
+Traditional MVC applications are built to create complete web applications using the Model-View-Controller pattern. They involve Models for managing data and business logic, Views for rendering HTML pages, and Controllers for handling user input and interactions. These applications primarily generate dynamic web pages that users interact with through a browser.
 
-Differences from MVC:
-Traditional MVC: Builds full web applications with Models managing data and logic, Views rendering HTML, and Controllers handling input and interactions, aimed at generating dynamic web pages.
-Web API: Focuses on providing data services, using Models and Controllers without Views, returning data in formats like JSON or XML for consumption by other applications or services.
-Challenges Encountered: Yes, traditional MVC applications can be more complex than Web APIs, requiring many changes to fix errors, leading to performance overhead from frequent page refreshes and complex data exchanges.
+Conversely, Web APIs aim to provide data services rather than full web applications. They use Models to manage data and Controllers to handle requests, but they do not include Views. Instead of generating HTML, Web APIs return data in formats like JSON or XML. These APIs are intended to be used by other applications or services, offering programmatic access to data and functionality without a user interface.
+ 
+Bottlenecks (Encountered): (Yes/No and Briefly Explain)
+ Have you encountered any performance challenges with traditional MVC applications compared to Web APIs? If so, briefly describe the scenario(s). (e.g., Frequent page refreshes causing performance overhead, complex data exchange requiring a more lightweight approach)
+ANSWER:
+Yes, in my experience, traditional MVC applications are more complex than Web APIs. For instance, numerous changes are often required to run or fix errors in traditional MVC applications, making them more cumbersome compared to the relatively straightforward nature of Web APIs.
+ 
+ 
